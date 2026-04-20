@@ -4,16 +4,45 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>GREEN API</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <div class="wrapper">
 
-        <h1>GREEN API TEST</h1>
-
+        <h1>GREEN API Test Page</h1>
+       
         <div class="content">
-            <div class="left"></div>
-            <div class="right"></div>
+
+            <div class="left">
+
+                <input id="idInstance" placeholder="idInstance">
+                <input id="apiToken" placeholder="ApiTokenInstance">
+
+                <button onclick="getSettings()">getSettings</button>
+                <button onclick="getStateInstance()">getStateInstance</button>
+
+                <input id="phone" placeholder="77771234567">
+                <textarea id="message" placeholder="Hello world"></textarea>
+
+                <button onclick="sendMessage()">sendMessage</button>
+
+                <input id="filePhone" placeholder="77771234567">
+                <input id="fileUrl" placeholder="https://my-site.com/img/horse.png">
+
+                <button onclick="sendFileByUrl()">sendFileByUrl</button>
+
+            </div>
+
+            <div class="right">
+                <label>Ответ:</label>
+                <div class="result">
+                    <textarea id="result" readonly></textarea>
+                </div>
+            </div>
+
         </div>
+
     </div>
+    <script src="script.js"></script>
 </body>
 </html>
