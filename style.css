@@ -62,11 +62,11 @@ body {
     margin-bottom: 5px;
   }
 
-  .result {
+  .result-area {
     flex: 1;
   }
 
-  .result textarea {
+  .result-area textarea {
     height: 100%;
     width: 100%;
   }
